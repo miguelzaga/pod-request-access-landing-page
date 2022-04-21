@@ -1,0 +1,28 @@
+{
+  "name": "pod-request-access-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to a Frontend Mentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelzaga/pod-request-access-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelzaga/pod-request-access-landing-page/issues"
+  },
+  "homepage": "https://github.com/miguelzaga/pod-request-access-landing-page#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.50.1"
+  },
+  "dependencies": {}
+}
