@@ -89,6 +89,8 @@ body {
 .main {
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__bg {
@@ -107,6 +109,10 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.logo {
+  margin: 3.875rem auto 3.5625rem auto;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
