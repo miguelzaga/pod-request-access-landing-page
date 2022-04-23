@@ -1,0 +1,22 @@
+.main {
+  position: relative;
+  height: 100%;
+}
+
+.main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.main__filter {
+  background-color: $gray;
+  filter: brightness(0.2) opacity(0.9);
+  width: 100%;
+  height: rem(667px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

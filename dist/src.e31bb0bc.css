@@ -81,4 +81,32 @@ svg {
   fill: currentColor;
 }
 
+body {
+  width: 100vw;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+}
+
+.main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.main__filter {
+  background-color: #5a668a;
+  filter: brightness(0.2) opacity(0.9);
+  width: 100%;
+  height: 41.6875rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
