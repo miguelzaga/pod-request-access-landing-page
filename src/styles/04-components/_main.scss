@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  @include breakpoint($sm-md) {
+  @include breakpoint($md) {
     align-items: flex-start;
     padding: rem(39px);
   }
@@ -44,7 +44,7 @@
   left: 0;
   z-index: -1;
   min-height: rem(667px);
-  @include breakpoint($sm-md) {
+  @include breakpoint($md) {
     display: none;
   }
 }
@@ -53,8 +53,8 @@
   display: none;
   position: absolute;
   bottom: 0;
-  left: 0;
-  @include breakpoint($sm-md) {
+  left: rem(30px);
+  @include breakpoint($md) {
     display: block;
   }
 }

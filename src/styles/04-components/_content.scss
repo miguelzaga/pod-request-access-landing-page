@@ -5,7 +5,7 @@
   margin: rem(19px) 0;
   text-align: center;
   max-width: rem(635px);
-  @include breakpoint($sm-md) {
+  @include breakpoint($md) {
     background-color: $black;
     margin-top: rem(152px);
     align-items: flex-start;
@@ -17,7 +17,9 @@
   text-transform: uppercase;
   margin-bottom: 1rem;
   order: 1;
-  @include breakpoint($sm-md) {
+  max-width: rem(340px);
+  @include breakpoint($md) {
+    max-width: none;
     margin: rem(93px) 0 rem(31px) 0;
   }
 }
@@ -33,7 +35,7 @@
 
 .content__logo-bar {
   order: 3;
-  @include breakpoint($sm-md) {
+  @include breakpoint($md) {
     order: 5;
   }
 }
@@ -43,7 +45,7 @@
   margin: 3rem 0;
   width: 100%;
   max-width: rem(427px);
-  @include breakpoint($sm-md) {
+  @include breakpoint($md) {
     margin: rem(40px) 0;
   }
 }
