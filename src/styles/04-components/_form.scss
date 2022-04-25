@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+@mixin form__children {
+  height: rem(46px);
+  border-radius: rem(28px);
+  border: 0;
+}
+
+.form__input {
+  @include form__children;
+  margin-bottom: 1rem;
+  background-color: $dark-gray;
+}
+
+.form__btn {
+  @include form__children;
+  background-color: $green;
+}
