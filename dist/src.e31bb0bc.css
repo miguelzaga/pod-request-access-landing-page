@@ -155,7 +155,30 @@ body {
 }
 
 .logo-bar {
-  margin: 2.0625rem 0;
+  margin: 2.0625rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-bar__spotify {
+  width: 3.5rem;
+  margin-right: 1.4375rem;
+}
+
+.logo-bar__apple {
+  width: 2.8125rem;
+  margin-right: 1.5625rem;
+}
+
+.logo-bar__google {
+  width: 4.5625rem;
+  margin-right: 1rem;
+}
+
+.logo-bar__pocket {
+  width: 4.8125rem;
 }
 
 .form {

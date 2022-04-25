@@ -1,3 +1,24 @@
 .logo-bar {
-  margin: rem(33px) 0;
+  // width: rem(315px);
+  margin: rem(33px) auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-bar__spotify {
+  width: rem(56px);
+  margin-right: rem(23px);
+}
+.logo-bar__apple {
+  width: rem(45px);
+  margin-right: rem(25px);
+}
+.logo-bar__google {
+  width: rem(73px);
+  margin-right: 1rem;
+}
+.logo-bar__pocket {
+  width: rem(77px);
 }
