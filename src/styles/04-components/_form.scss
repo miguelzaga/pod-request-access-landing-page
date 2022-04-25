@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 3rem 0;
+  position: relative;
 }
 
 @mixin form__children {
@@ -19,6 +19,10 @@
   background-color: $dark-gray;
   color: $white;
   padding: 0 2rem;
+  @include breakpoint($sm-md) {
+    margin-bottom: 0;
+    height: rem(56px);
+  }
 }
 
 .form__input::placeholder {
@@ -31,4 +35,12 @@
   text-transform: capitalize;
   background-color: $green;
   color: $black;
+  @include breakpoint($sm-md) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: rem(46px);
+    margin: rem(5px) rem(5px) 0 0;
+    padding: 0 rem(27px);
+  }
 }

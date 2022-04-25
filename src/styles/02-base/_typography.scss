@@ -6,11 +6,23 @@ body {
 h1 {
   color: $green;
   font-weight: $light;
+  font-size: rem(27px);
+  line-height: rem(38px);
+  @include breakpoint($md) {
+    font-size: 3rem;
+    line-height: rem(56px);
+  }
 }
 
 p {
   color: $light-gray;
   font-weight: $light;
+  font-size: rem(15px);
+  line-height: rem(25px);
+  @include breakpoint($md) {
+    font-size: rem(18px);
+    line-height: rem(28px);
+  }
 }
 
 form {

@@ -8,6 +8,7 @@
   padding: 1.5rem;
   @include breakpoint($sm-md) {
     align-items: flex-start;
+    padding: rem(39px);
   }
 }
 

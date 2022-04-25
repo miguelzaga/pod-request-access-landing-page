@@ -1,25 +1,42 @@
 .logo-bar {
-  // width: rem(315px);
   margin: rem(33px) auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   opacity: 0.5;
+  @include breakpoint($sm-md) {
+    margin: 1.5rem 0 0 0;
+  }
 }
 
 .logo-bar__spotify {
   width: rem(56px);
   margin-right: rem(23px);
+  @include breakpoint($md) {
+    width: rem(96px);
+    margin-right: rem(40px);
+  }
 }
 .logo-bar__apple {
   width: rem(45px);
   margin-right: rem(25px);
+  @include breakpoint($md) {
+    width: rem(78px);
+    margin-right: rem(41px);
+  }
 }
 .logo-bar__google {
   width: rem(73px);
   margin-right: 1rem;
+  @include breakpoint($md) {
+    width: rem(125px);
+    margin-right: rem(27px);
+  }
 }
 .logo-bar__pocket {
   width: rem(77px);
+  @include breakpoint($md) {
+    width: rem(129px);
+  }
 }
