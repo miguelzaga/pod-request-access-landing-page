@@ -81,14 +81,16 @@ svg {
   fill: currentColor;
 }
 
-h1 {
+body {
   font-family: "Chivo", sans-serif;
+}
+
+h1 {
   color: #54e6af;
   font-weight: 300;
 }
 
 p {
-  font-family: "Chivo", sans-serif;
   color: #c2cbe5;
   font-weight: 300;
 }
@@ -113,6 +115,7 @@ body {
   top: 0;
   left: 0;
   z-index: -2;
+  min-height: 41.6875rem;
 }
 
 .main__filter {
@@ -165,15 +168,29 @@ body {
   height: 2.875rem;
   border-radius: 1.75rem;
   border: 0;
+  font-family: "Chivo", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
   margin-bottom: 1rem;
   background-color: #2c344b;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.form__input::placeholder {
+  color: #fff;
+  opacity: 0.5;
 }
 
 .form__btn {
   height: 2.875rem;
   border-radius: 1.75rem;
   border: 0;
+  font-family: "Chivo", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
   background-color: #54e6af;
+  color: #121725;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

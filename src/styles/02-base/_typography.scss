@@ -1,12 +1,13 @@
+body {
+  font-family: $font;
+}
+
 h1 {
-    font-family: $font;
-    color: $green;
-    font-weight: $light;
+  color: $green;
+  font-weight: $light;
 }
 
 p {
-    font-family: $font;
-    color: $light-gray;
-    font-weight: $light;
-
+  color: $light-gray;
+  font-weight: $light;
 }

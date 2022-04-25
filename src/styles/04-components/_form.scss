@@ -8,15 +8,26 @@
   height: rem(46px);
   border-radius: rem(28px);
   border: 0;
+  font-family: $font;
+  font-size: rem(14px);
+  line-height: rem(28px);
 }
 
 .form__input {
   @include form__children;
   margin-bottom: 1rem;
   background-color: $dark-gray;
+  color: $white;
+  padding: 0 2rem;
+}
+
+.form__input::placeholder {
+  color: $white;
+  opacity: 0.5;
 }
 
 .form__btn {
   @include form__children;
   background-color: $green;
+  color: $black;
 }
