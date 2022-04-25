@@ -1,6 +1,12 @@
 .content {
-    margin: rem(19px) auto;
+    display: flex;
+    flex-direction: column;
+    margin: rem(19px) 0;
     text-align: center;
+    max-width: rem(635px);
+    @include breakpoint($sm-md){
+        background-color: $black;
+    }
 }
 
 .content__h1 {

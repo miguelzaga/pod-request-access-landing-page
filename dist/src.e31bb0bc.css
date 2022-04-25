@@ -83,40 +83,77 @@ svg {
 
 body {
   font-family: "Chivo", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
   color: #54e6af;
+  font-weight: 300;
 }
 
 p {
   color: #c2cbe5;
+  font-weight: 300;
+}
+
+form {
+  font-weight: 700;
+}
+
+input {
+  font-weight: 700;
+}
+
+button {
+  font-weight: 700;
 }
 
 body {
   width: 100vw;
   height: 100%;
   min-height: 100vh;
-  font-family: "Chivo", sans-serif;
-  font-weight: 300;
+  background: #121725;
 }
 
 .main {
   position: relative;
+  min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
 }
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .main {
+    align-items: flex-start;
+  }
+}
 
 .main__bg {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: -2;
+}
+
+.main__bg--mobile {
   min-height: 41.6875rem;
   height: clamp(41.6875rem, 100%, 55.5rem);
+}
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .main__bg--mobile {
+    display: none;
+  }
+}
+
+.main__bg--tablet {
+  display: none;
+}
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .main__bg--tablet {
+    display: block;
+  }
 }
 
 .main__filter {
@@ -130,14 +167,39 @@ body {
   z-index: -1;
   min-height: 41.6875rem;
 }
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .main__filter {
+    display: none;
+  }
+}
+
+.main__pattern {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .main__pattern {
+    display: block;
+  }
+}
 
 .logo {
   margin: 2.375rem;
 }
 
 .content {
-  margin: 1.1875rem auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1.1875rem 0;
   text-align: center;
+  max-width: 39.6875rem;
+}
+@media (min-width: calc((23.4375rem + 48rem) / 2)) {
+  .content {
+    background-color: #121725;
+  }
 }
 
 .content__h1 {
@@ -162,6 +224,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  opacity: 0.5;
 }
 
 .logo-bar__spotify {
@@ -214,6 +277,7 @@ body {
   font-family: "Chivo", sans-serif;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  text-transform: capitalize;
   background-color: #54e6af;
   color: #121725;
 }

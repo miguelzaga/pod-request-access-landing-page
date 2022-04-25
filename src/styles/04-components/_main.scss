@@ -1,19 +1,36 @@
 .main {
   position: relative;
+  min-height: 100vh;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+  @include breakpoint($sm-md) {
+    align-items: flex-start;
+  }
 }
 
 .main__bg {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: -2;
+}
+
+.main__bg--mobile {
   min-height: rem(667px);
-  height: clamp(rem(667px), 100%, rem(888px))
+  height: clamp(rem(667px), 100%, rem(888px));
+  @include breakpoint($sm-md) {
+    display: none;
+  }
+}
+
+.main__bg--tablet {
+  display: none;
+  @include breakpoint($sm-md) {
+    display: block;
+  }
 }
 
 .main__filter {
@@ -26,4 +43,17 @@
   left: 0;
   z-index: -1;
   min-height: rem(667px);
+  @include breakpoint($sm-md) {
+    display: none;
+  }
+}
+
+.main__pattern {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include breakpoint($sm-md) {
+    display: block;
+  }
 }

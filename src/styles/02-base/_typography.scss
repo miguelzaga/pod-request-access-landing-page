@@ -1,11 +1,26 @@
 body {
   font-family: $font;
+  font-weight: $regular;
 }
 
 h1 {
   color: $green;
+  font-weight: $light;
 }
 
 p {
   color: $light-gray;
+  font-weight: $light;
+}
+
+form {
+  font-weight: $bold;
+}
+
+input {
+  font-weight: $bold;
+}
+
+button {
+  font-weight: $bold;
 }

@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -39,7 +42,10 @@
           </g>
         </svg>
       </figure>
-      <img class="main__bg" src="./assets/mobile/image-host.jpg" />
+      <figure class="main__bg">
+        <img class="main__bg--mobile" src="./assets/mobile/image-host.jpg" />
+        <img class="main__bg--tablet" src="./assets/tablet/image-host.jpg" />
+      </figure>
       <div class="main__filter"></div>
       <section class="content">
         <h1 class="content__h1">
@@ -51,16 +57,28 @@
           and more!
         </p>
         <figure class="logo-bar">
-          <img class="logo-bar__spotify" src="./assets/desktop/spotify.svg">
-          <img class="logo-bar__apple" src="./assets/desktop/apple-podcast.svg">
-          <img class="logo-bar__google" src="./assets/desktop/google-podcasts.svg">
-          <img class="logo-bar__pocket" src="./assets/desktop/pocket-casts.svg">
+          <img class="logo-bar__spotify" src="./assets/desktop/spotify.svg" />
+          <img
+            class="logo-bar__apple"
+            src="./assets/desktop/apple-podcast.svg"
+          />
+          <img
+            class="logo-bar__google"
+            src="./assets/desktop/google-podcasts.svg"
+          />
+          <img
+            class="logo-bar__pocket"
+            src="./assets/desktop/pocket-casts.svg"
+          />
         </figure>
         <form class="content__form form">
           <input class="form__input" type="email" placeholder="Email address" />
           <button class="form__btn" type="submit">Request access</button>
         </form>
       </section>
+      <figure class="main__pattern">
+        <img src="./assets/desktop/bg-pattern-dots.svg">
+      </figure>
     </main>
 
     <script src="./index.js"></script>

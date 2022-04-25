@@ -28,6 +28,7 @@
 
 .form__btn {
   @include form__children;
+  text-transform: capitalize;
   background-color: $green;
   color: $black;
 }
