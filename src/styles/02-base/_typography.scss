@@ -40,3 +40,8 @@ input {
 button {
   font-weight: $bold;
 }
+
+small {
+  font-size: rem(12px);
+  line-height: rem(14.28px);
+}

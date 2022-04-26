@@ -32,9 +32,11 @@
 
 .form__btn {
   @include form__children;
+  cursor: pointer;
   text-transform: capitalize;
   background-color: $green;
   color: $black;
+  transition: linear .3s;
   @include breakpoint($md) {
     position: absolute;
     top: 0;
@@ -43,4 +45,14 @@
     margin: rem(5px) rem(5px) 0 0;
     padding: 0 rem(27px);
   }
+}
+
+.form__btn:hover{
+  background-color: $light-green;
+
+}
+
+.form__err-msg {
+  color: $red;
+  margin: 0.5rem 0 0 2rem;
 }

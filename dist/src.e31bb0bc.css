@@ -130,6 +130,11 @@ button {
   font-weight: 700;
 }
 
+small {
+  font-size: 0.75rem;
+  line-height: 0.8925rem;
+}
+
 body {
   width: 100vw;
   height: 100%;
@@ -237,7 +242,7 @@ body {
 @media (min-width: 90rem) {
   .main__pattern {
     left: auto;
-    right: -0.75rem;
+    right: -1.5rem;
     bottom: 4.875rem;
   }
 }
@@ -327,6 +332,7 @@ body {
 @media (min-width: 48rem) {
   .content__form {
     margin: 2.5rem 0;
+    padding-bottom: 0.0625rem;
   }
 }
 
@@ -423,9 +429,11 @@ body {
   font-family: "Chivo", sans-serif;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  cursor: pointer;
   text-transform: capitalize;
   background-color: #54e6af;
   color: #121725;
+  transition: linear 0.3s;
 }
 @media (min-width: 48rem) {
   .form__btn {
@@ -436,6 +444,19 @@ body {
     margin: 0.3125rem 0.3125rem 0 0;
     padding: 0 1.6875rem;
   }
+}
+
+.form__btn:hover {
+  background-color: #b3ffe2;
+}
+
+.form__err-msg {
+  color: #fb3e3e;
+  margin: 0.5rem 0 0 2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
