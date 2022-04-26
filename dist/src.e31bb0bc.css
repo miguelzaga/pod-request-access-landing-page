@@ -98,6 +98,12 @@ h1 {
     line-height: 3.5rem;
   }
 }
+@media (min-width: 90rem) {
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+}
 
 p {
   color: #c2cbe5;
@@ -134,10 +140,12 @@ body {
 .main {
   position: relative;
   min-height: 100vh;
+  max-width: 100rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: clip;
   padding: 1.5rem;
 }
 @media (min-width: 48rem) {
@@ -146,12 +154,23 @@ body {
     padding: 2.4375rem;
   }
 }
+@media (min-width: 90rem) {
+  .main {
+    padding: 8.125rem 0 8.125rem 10.3125rem;
+    margin: auto;
+  }
+}
 
 .main__bg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -2;
+}
+@media (min-width: 90rem) {
+  .main__bg {
+    top: 8.125rem;
+  }
 }
 
 .main__bg--mobile {
@@ -169,6 +188,20 @@ body {
 }
 @media (min-width: calc((23.4375rem + 48rem) / 2)) {
   .main__bg--tablet {
+    display: block;
+  }
+}
+@media (min-width: calc((48rem + 90rem) / 2)) {
+  .main__bg--tablet {
+    display: none;
+  }
+}
+
+.main__bg--desktop {
+  display: none;
+}
+@media (min-width: calc((48rem + 90rem) / 2)) {
+  .main__bg--desktop {
     display: block;
   }
 }
@@ -201,6 +234,13 @@ body {
     display: block;
   }
 }
+@media (min-width: 90rem) {
+  .main__pattern {
+    left: auto;
+    right: -0.75rem;
+    bottom: 4.875rem;
+  }
+}
 
 .logo {
   margin: 2.375rem;
@@ -208,6 +248,13 @@ body {
 @media (min-width: calc((23.4375rem + 48rem) / 2)) {
   .logo {
     margin: 0.6875rem 0 0 0;
+  }
+}
+@media (min-width: calc((48rem + 90rem) / 2)) {
+  .logo {
+    margin: 0;
+    position: absolute;
+    top: 6.375rem;
   }
 }
 
@@ -227,6 +274,12 @@ body {
     text-align: left;
   }
 }
+@media (min-width: calc((48rem + 90rem) / 2)) {
+  .content {
+    max-width: 45.1875rem;
+    margin-top: 8.1875rem;
+  }
+}
 
 .content__h1 {
   text-transform: uppercase;
@@ -238,6 +291,12 @@ body {
   .content__h1 {
     max-width: none;
     margin: 5.8125rem 0 1.9375rem 0;
+  }
+}
+@media (min-width: 90rem) {
+  .content__h1 {
+    max-width: none;
+    margin: 5.5rem 0 1.5rem 0;
   }
 }
 

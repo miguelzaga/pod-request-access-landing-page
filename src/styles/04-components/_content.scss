@@ -11,6 +11,10 @@
     align-items: flex-start;
     text-align: left;
   }
+  @include breakpoint($md-lg) {
+    max-width: rem(723px);
+    margin-top: rem(131px);
+  }
 }
 
 .content__h1 {
@@ -21,6 +25,10 @@
   @include breakpoint($md) {
     max-width: none;
     margin: rem(93px) 0 rem(31px) 0;
+  }
+  @include breakpoint($lg) {
+    max-width: none;
+    margin: rem(88px) 0 rem(24px) 0;
   }
 }
 

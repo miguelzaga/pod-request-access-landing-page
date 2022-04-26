@@ -12,6 +12,10 @@ h1 {
     font-size: 3rem;
     line-height: rem(56px);
   }
+  @include breakpoint($lg) {
+    font-size: rem(52px);
+    line-height: rem(62px);
+  }
 }
 
 p {

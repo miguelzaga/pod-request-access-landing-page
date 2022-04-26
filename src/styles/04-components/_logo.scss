@@ -3,4 +3,9 @@
     @include breakpoint($sm-md){
         margin: rem(11px) 0 0 0;
     }
+    @include breakpoint($md-lg){
+        margin: 0;
+        position: absolute;
+        top: rem(calc(130px - 28px));
+    }
 }

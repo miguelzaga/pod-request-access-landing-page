@@ -1,14 +1,20 @@
 .main {
   position: relative;
   min-height: 100vh;
+  max-width: rem(1600px);
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: clip;
   padding: 1.5rem;
   @include breakpoint($md) {
     align-items: flex-start;
     padding: rem(39px);
+  }
+  @include breakpoint($lg) {
+    padding: rem(130px) 0 rem(130px) rem(165px);
+    margin: auto;
   }
 }
 
@@ -17,6 +23,9 @@
   top: 0;
   right: 0;
   z-index: -2;
+  @include breakpoint($lg) {
+    top: rem(130px);
+  }
 }
 
 .main__bg--mobile {
@@ -30,6 +39,16 @@
 .main__bg--tablet {
   display: none;
   @include breakpoint($sm-md) {
+    display: block;
+  }
+  @include breakpoint($md-lg) {
+    display: none;
+  }
+}
+
+.main__bg--desktop {
+  display: none;
+  @include breakpoint($md-lg) {
     display: block;
   }
 }
@@ -56,5 +75,10 @@
   left: rem(30px);
   @include breakpoint($md) {
     display: block;
+  }
+  @include breakpoint($lg) {
+    left: auto;
+    right: rem(-12px);
+    bottom: rem(78px);
   }
 }
