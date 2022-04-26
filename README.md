@@ -96,13 +96,15 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [The Parcel Bundler](https://www.youtube.com/watch?v=OK6akGZCC88&list=PLoskGHof_0kHVvCWunMv1daUd-n7SIcOZ&index=1) - I organized the project based in this video. I am just getting my feet wet with Parcel.
 - [When to use margin vs padding](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css/9183818#9183818) - This helped me organize better the margin of the elements, I did not know the collapse behavior of margin, really cool.
+- [Javascript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) - This helped me go through the form validation.
+- [Disable HTML validation](https://stackoverflow.com/questions/3090369/disable-validation-of-html5-form-elements) - Useful Stackoverflow question.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

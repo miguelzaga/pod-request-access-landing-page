@@ -117,20 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.script = void 0;
-
-var script = function script() {
-  return true;
-};
-
-exports.script = script;
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -202,15 +189,56 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
-var _js = require("./js");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.script = void 0;
+
+var script = function script() {
+  var form = document.querySelector(".content__form");
+  var email = document.querySelector(".form__input");
+  var errMsg = document.querySelector(".form__err-msg");
+
+  var isEmailValid = function isEmailValid(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  };
+
+  var showError = function showError() {
+    errMsg.classList.remove("hidden");
+  };
+
+  var hideError = function hideError() {
+    errMsg.classList.add("hidden");
+  };
+
+  var handler = function handler(e) {
+    e.preventDefault();
+
+    if (isEmailValid(email.value)) {
+      hideError();
+      window.open("https://www.frontendmentor.io/profile/miguelzaga", "_blank");
+    } else {
+      showError();
+    }
+  };
+
+  form.addEventListener("submit", handler);
+};
+
+exports.script = script;
+},{}],"index.js":[function(require,module,exports) {
+"use strict";
 
 require("./styles");
 
-console.log((0, _js.script)());
-},{"./js":"js/index.js","./styles":"styles/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _js = require("./js");
+
+(0, _js.script)();
+},{"./styles":"styles/index.scss","./js":"js/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

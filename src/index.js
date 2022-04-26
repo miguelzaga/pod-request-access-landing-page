@@ -1,4 +1,4 @@
-import { script } from "./js";
 import './styles'
+import { script } from "./js";
 
-console.log(script());
+script();
