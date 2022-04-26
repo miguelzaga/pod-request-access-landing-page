@@ -51,20 +51,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
+- Parcel
+- Sass
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This is my first time using Parcel. I was going to use Webpack but it needs more configuration. I am glad that Parcel worked and that it easy to use with Sass (this is my second project using it). I watched some videos and I will try to include Sass nesting and a better structure.
 
 To see how you can add code snippets, see below:
 
