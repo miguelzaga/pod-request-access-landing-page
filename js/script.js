@@ -31,4 +31,4 @@ const script = function () {
   form.addEventListener("submit", handler);
 };
 
-export { script };
+window.onload = script;
