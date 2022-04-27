@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL](https://your-solution-url.com)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/pod-request-access-landing-page-using-parcel-and-sass-B1NmrC8Bc)
 - Live Site URL: [URL](https://miguelzaga.github.io/pod-request-access-landing-page/)
 
 ## My process
