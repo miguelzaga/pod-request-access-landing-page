@@ -14,7 +14,6 @@ This is a solution to the [Pod request access landing page challenge on Frontend
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -32,26 +31,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL](https://your-solution-url.com)
+- Live Site URL: [URL](https://miguelzaga.github.io/pod-request-access-landing-page/)
 
 ## My process
 
 ### Built with
 
-- Parcel
+- Parcel (Though, I could not deploy it)
 - Sass
 - Semantic HTML5 markup
 - Flexbox
@@ -59,33 +50,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-This is my first time using Parcel. I was going to use Webpack but it needs more configuration. I am glad that Parcel worked and that it easy to use with Sass (this is my second project using it). I watched some videos and I will try to include Sass nesting and a better structure.
+This is my first time using Parcel. I was going to use Webpack but it needs more configuration. I am glad that Parcel worked and that it easy to use with Sass (this is my second project using it). I watched some videos and I will try to include Sass nesting and a better structure. I also failed to deploy with parcel and gh-pages. I think I might try gulp next time.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+#### JS
+It is a simple handler function but I like it.
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  const handler = function (e) {
+    e.preventDefault();
+    if (isEmailValid(email.value)) {
+      hideError();
+      window.open("https://www.frontendmentor.io/profile/miguelzaga", "_blank");
+    } else {
+      showError();
+    }
+  };
+
+  form.addEventListener("submit", handler);
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to learn more about package managers and build tools.
 
 ### Useful resources
 
@@ -94,18 +80,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Javascript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) - This helped me go through the form validation.
 - [Disable HTML validation](https://stackoverflow.com/questions/3090369/disable-validation-of-html5-form-elements) - Useful Stackoverflow question.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Linkedin - [Miguel Zapata](https://www.linkedin.com/in/miguelzaga/)
