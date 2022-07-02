@@ -80,5 +80,5 @@ I need to learn more about package managers and build tools.
 
 ## Author
 
+- Website - [Miguel Zapata](https://www.miguezaga.online)
 - Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
-- Linkedin - [Miguel Zapata](https://www.linkedin.com/in/miguelzaga/)
